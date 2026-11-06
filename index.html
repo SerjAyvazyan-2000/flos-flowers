@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FLOS — салон цветов в Новосибирске | Доставка букетов</title>
+<meta name="description" content="Салон цветов FLOS на Красном проспекте, 75. Авторские букеты из свежих цветов, доставка по Новосибирску, открытка от руки в подарок.">
+<meta name="theme-color" content="#120d0c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Onest:wght@300;400;500;600&family=Marck+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <svg class="preloader__bloom" viewBox="0 0 120 120">
+    <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+      <path d="M60 60c-14-10-14-30 0-40 14 10 14 30 0 40z"/>
+      <path d="M60 60c10-14 30-14 40 0-10 14-30 14-40 0z"/>
+      <path d="M60 60c14 10 14 30 0 40-14-10-14-30 0-40z"/>
+      <path d="M60 60c-10 14-30 14-40 0 10-14 30-14 40 0z"/>
+      <circle cx="60" cy="60" r="5"/>
+    </g>
+  </svg>
+  <div class="preloader__word"><span>F</span><span>L</span><span>O</span><span>S</span></div>
+  <div class="preloader__line"><i></i></div>
+</div>
+
+<div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label">смотреть</span></div></div>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#top" class="logo" aria-label="FLOS — на главную">
+      <span class="logo__mark">FLOS</span><span class="logo__sub">flowers · nsk</span>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#occasion">Поводы</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#postcard">Открытка</a>
+      <a href="#works">Работы</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79138943352" class="header__phone">+7 913 894-33-52</a>
+      <a href="https://t.me/Alexandr_remkomfort" target="_blank" rel="noopener" class="btn btn--small btn--rose" data-magnetic>Заказать</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mmenu" id="mobileMenu" aria-hidden="true">
+  <div class="mmenu__bg"></div>
+  <nav class="mmenu__nav">
+    <a href="#occasion"><i>01</i>Поводы</a>
+    <a href="#catalog"><i>02</i>Каталог</a>
+    <a href="#postcard"><i>03</i>Открытка</a>
+    <a href="#works"><i>04</i>Работы</a>
+    <a href="#delivery"><i>05</i>Доставка</a>
+    <a href="#contacts"><i>06</i>Контакты</a>
+  </nav>
+  <div class="mmenu__foot">
+    <a href="tel:+79138943352" class="mmenu__phone">+7 913 894-33-52</a>
+    <div class="mmenu__socials">
+      <a href="https://t.me/Flos_Flowers" target="_blank" rel="noopener">Telegram-канал</a>
+      <a href="https://wa.me/79138943352" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <p>Новосибирск, Красный проспект, 75</p>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <canvas class="hero__petals" id="petals" aria-hidden="true"></canvas>
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <p class="eyebrow" data-reveal><span class="dot"></span>Салон цветов в центре Новосибирска</p>
+      <h1 class="hero__title">
+        <span class="line"><span>Цветы, после</span></span>
+        <span class="line"><span>которых <em class="script">слова</em></span></span>
+        <span class="line"><span>уже не нужны</span></span>
+      </h1>
+      <p class="hero__lead" data-reveal>Собираем букеты в&nbsp;стиле современного минимализма из&nbsp;свежих цветов и&nbsp;привозим по&nbsp;Новосибирску. К&nbsp;каждому заказу&nbsp;— открытка, подписанная от&nbsp;руки вашими словами.</p>
+      <div class="hero__cta" data-reveal>
+        <a href="#catalog" class="btn btn--rose" data-magnetic><span>Выбрать букет</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="https://t.me/Alexandr_remkomfort" target="_blank" rel="noopener" class="btn btn--ghost" data-magnetic>Написать флористу</a>
+      </div>
+      <ul class="hero__trust" data-reveal>
+        <li><b>4,4 ★</b><span>на Яндекс Картах</span></li>
+        <li><b>0 ₽</b><span>открытка от руки</span></li>
+        <li><b>Доставка</b><span>и самовывоз</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" id="heroVisual">
+      <figure class="arch arch--main" data-depth="0.6"><img src="assets/images/red-brick.jpg" alt="Букет красных роз в белой упаковке на фоне кирпичной стены" fetchpriority="high"></figure>
+      <figure class="arch arch--left" data-depth="1.2"><img src="assets/images/peony-mix.jpg" alt="Букет из пионов, лилий и гортензии"></figure>
+      <figure class="arch arch--right" data-depth="1.6"><img src="assets/images/chamomile.jpg" alt="Букет ромашек в матовой плёнке"></figure>
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text textLength="485" lengthAdjust="spacing"><textPath href="#circ" textLength="485" lengthAdjust="spacing">свежие цветы каждый день ✦ FLOS flowers ✦ </textPath></text></svg>
+        <span class="badge__core">✿</span>
+      </div>
+    </div>
+  </div>
+  <a href="#occasion" class="hero__scroll" aria-label="Листать вниз"><span>листайте</span><i></i></a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Свежие цветы каждый день</span><b>✦</b><span>Открытка от руки в подарок</span><b>✦</b><span>Доставка по Новосибирску</span><b>✦</b><span>Оплата картой</span><b>✦</b><span>Самовывоз — Красный проспект, 75</span><b>✦</b>
+    <span>Свежие цветы каждый день</span><b>✦</b><span>Открытка от руки в подарок</span><b>✦</b><span>Доставка по Новосибирску</span><b>✦</b><span>Оплата картой</span><b>✦</b><span>Самовывоз — Красный проспект, 75</span><b>✦</b>
+  </div>
+</div>
+
+<!-- OCCASIONS -->
+<section class="occasion section" id="occasion">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow" data-reveal><span class="dot"></span>Подбор за 10 секунд</p>
+      <h2 class="h2" data-split>Кому дарим? <em class="script">Подскажем</em> букет</h2>
+    </div>
+    <div class="occasion__grid">
+      <ul class="occasion__list" role="tablist" aria-label="Поводы">
+        <li><button role="tab" class="occ-tab is-active" data-occ="0"><i>01</i>Любимой</button></li>
+        <li><button role="tab" class="occ-tab" data-occ="1"><i>02</i>Маме</button></li>
+        <li><button role="tab" class="occ-tab" data-occ="2"><i>03</i>На день рождения</button></li>
+        <li><button role="tab" class="occ-tab" data-occ="3"><i>04</i>Просто так</button></li>
+        <li><button role="tab" class="occ-tab" data-occ="4"><i>05</i>Чтобы извиниться</button></li>
+        <li><button role="tab" class="occ-tab" data-occ="5"><i>06</i>Коллеге</button></li>
+      </ul>
+      <div class="occasion__stage">
+        <div class="occasion__media" data-cursor>
+          <img class="occ-img is-active" src="assets/images/red-black.jpg" alt="Букет «Чёрный бархат»" loading="lazy">
+          <img class="occ-img" src="assets/images/peony-mix.jpg" alt="Букет «Пионовый сад»" loading="lazy">
+          <img class="occ-img" src="assets/images/hydrangea.jpg" alt="Букет «Пастельное облако»" loading="lazy">
+          <img class="occ-img" src="assets/images/chamomile.jpg" alt="Букет «Ромашковое поле»" loading="lazy">
+          <img class="occ-img" src="assets/images/white-25.jpg" alt="Букет «Белый флаг»" loading="lazy">
+          <img class="occ-img" src="assets/images/dried-cup.jpg" alt="Сухоцвет в стакане" loading="lazy">
+          <div class="occasion__timer"><i></i></div>
+        </div>
+        <div class="occasion__info" aria-live="polite">
+          <p class="occasion__tag" id="occTag">Повод: любимой</p>
+          <h3 class="occasion__name" id="occName">Чёрный бархат</h3>
+          <p class="occasion__desc" id="occDesc">Глубокие красные розы в&nbsp;чёрной упаковке с&nbsp;атласной лентой. Смелый жест, который запоминают надолго.</p>
+          <div class="occasion__bottom">
+            <span class="price" id="occPrice">от 6 500 ₽</span>
+            <button class="btn btn--rose" data-order id="occBtn" data-name="Чёрный бархат" data-magnetic>Хочу этот букет</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG (horizontal) -->
+<section class="catalog" id="catalog">
+  <div class="catalog__sticky">
+    <div class="container catalog__head">
+      <div>
+        <p class="eyebrow" data-reveal><span class="dot"></span>Каталог</p>
+        <h2 class="h2" data-split>Букеты, которые <em class="script">любят</em> в&nbsp;Новосибирске</h2>
+      </div>
+      <div class="catalog__meta">
+        <p>Не&nbsp;нашли свой? Соберём по&nbsp;фото, бюджету или настроению.</p>
+        <div class="catalog__bar"><i id="catBar"></i></div>
+      </div>
+    </div>
+    <div class="catalog__viewport">
+      <div class="catalog__track" id="catTrack">
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/white-25.jpg" alt="25 белых роз" loading="lazy"><span class="card__num">01</span><span class="card__hit">Хит</span></div>
+          <div class="card__body"><h3>Белое облако</h3><p>25 белых роз в&nbsp;нежно-голубой плёнке</p><div class="card__foot"><span class="price">от 4 900 ₽</span><button class="card__btn" data-order data-name="Белое облако" aria-label="Заказать букет Белое облако">+</button></div></div>
+        </article>
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/red-kraft.jpg" alt="51 красная роза в крафте" loading="lazy"><span class="card__num">02</span></div>
+          <div class="card__body"><h3>Алый шёлк</h3><p>51 красная роза в&nbsp;крафте с&nbsp;пудровой лентой</p><div class="card__foot"><span class="price">от 8 900 ₽</span><button class="card__btn" data-order data-name="Алый шёлк" aria-label="Заказать букет Алый шёлк">+</button></div></div>
+        </article>
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/hydrangea.jpg" alt="Букет гортензий" loading="lazy"><span class="card__num">03</span></div>
+          <div class="card__body"><h3>Пастельное облако</h3><p>Гортензии трёх оттенков: голубой, пудра, ваниль</p><div class="card__foot"><span class="price">от 7 500 ₽</span><button class="card__btn" data-order data-name="Пастельное облако" aria-label="Заказать букет Пастельное облако">+</button></div></div>
+        </article>
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/red-black.jpg" alt="Красные розы в чёрной упаковке" loading="lazy"><span class="card__num">04</span><span class="card__hit">Для неё</span></div>
+          <div class="card__body"><h3>Чёрный бархат</h3><p>35 красных роз в&nbsp;чёрной упаковке</p><div class="card__foot"><span class="price">от 6 500 ₽</span><button class="card__btn" data-order data-name="Чёрный бархат" aria-label="Заказать букет Чёрный бархат">+</button></div></div>
+        </article>
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/peony-mix.jpg" alt="Пионы, лилии и гортензия" loading="lazy"><span class="card__num">05</span></div>
+          <div class="card__body"><h3>Пионовый сад</h3><p>Пионы, лилии, гортензия, астранция, ромашка</p><div class="card__foot"><span class="price">от 5 900 ₽</span><button class="card__btn" data-order data-name="Пионовый сад" aria-label="Заказать букет Пионовый сад">+</button></div></div>
+        </article>
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/chamomile.jpg" alt="Букет ромашек" loading="lazy"><span class="card__num">06</span></div>
+          <div class="card__body"><h3>Ромашковое поле</h3><p>Облако матрикарии в&nbsp;матовой плёнке</p><div class="card__foot"><span class="price">от 2 900 ₽</span><button class="card__btn" data-order data-name="Ромашковое поле" aria-label="Заказать букет Ромашковое поле">+</button></div></div>
+        </article>
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/white-101.jpg" alt="101 белая роза" loading="lazy"><span class="card__num">07</span></div>
+          <div class="card__body"><h3>101 белая роза</h3><p>Классика, перед которой невозможно устоять</p><div class="card__foot"><span class="price">от 14 900 ₽</span><button class="card__btn" data-order data-name="101 белая роза" aria-label="Заказать 101 белую розу">+</button></div></div>
+        </article>
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/white-basket.jpg" alt="Корзина белых роз" loading="lazy"><span class="card__num">08</span></div>
+          <div class="card__body"><h3>Корзина «Белый сад»</h3><p>Белые розы в&nbsp;плетёной корзине</p><div class="card__foot"><span class="price">от 11 900 ₽</span><button class="card__btn" data-order data-name="Корзина «Белый сад»" aria-label="Заказать корзину Белый сад">+</button></div></div>
+        </article>
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/pink-roses.jpg" alt="Пудровые розы" loading="lazy"><span class="card__num">09</span></div>
+          <div class="card__body"><h3>Пудровая нежность</h3><p>Розы оттенка «пудра», от&nbsp;51&nbsp;шт.</p><div class="card__foot"><span class="price">от 9 500 ₽</span><button class="card__btn" data-order data-name="Пудровая нежность" aria-label="Заказать букет Пудровая нежность">+</button></div></div>
+        </article>
+        <article class="card" data-tilt>
+          <div class="card__img"><img src="assets/images/dried-cup-2.jpg" alt="Сухоцветы в стакане" loading="lazy"><span class="card__num">10</span></div>
+          <div class="card__body"><h3>Сухоцвет в стакане</h3><p>Хлопок, гортензия, лагурус. Живёт год без воды</p><div class="card__foot"><span class="price">от 2 400 ₽</span><button class="card__btn" data-order data-name="Сухоцвет в стакане" aria-label="Заказать сухоцвет в стакане">+</button></div></div>
+        </article>
+        <article class="card card--cta">
+          <p class="script">Ваш&nbsp;букет</p>
+          <h3>Соберём по вашему фото или бюджету</h3>
+          <a href="https://t.me/Alexandr_remkomfort" target="_blank" rel="noopener" class="btn btn--light" data-magnetic>Написать флористу</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCALE -->
+<section class="scale section" id="scale">
+  <div class="scale__number" aria-hidden="true" id="scaleNum">501</div>
+  <div class="container scale__grid">
+    <div class="scale__media">
+      <figure class="scale__big" data-clip data-cursor><img src="assets/images/roses-501.jpg" alt="Огромная корзина красных роз" loading="lazy" data-parallax="0.12"></figure>
+      <figure class="scale__small" data-clip><img src="assets/images/roses-basket-gray.jpg" alt="Корзина красных роз" loading="lazy"></figure>
+    </div>
+    <div class="scale__text">
+      <p class="eyebrow" data-reveal><span class="dot"></span>101 · 301 · 501</p>
+      <h2 class="h2" data-split>Когда «люблю» нужно сказать <em class="script">громко</em></h2>
+      <p class="lead" data-reveal>Огромные корзины роз, которые не&nbsp;помещаются в&nbsp;кадр. Собираем под заказ, подбираем оттенок, упаковку и&nbsp;время вручения&nbsp;— чтобы в&nbsp;этот момент замолчал весь офис.</p>
+      <ul class="ticks" data-reveal>
+        <li>Свежая роза, собранная в&nbsp;день вручения</li>
+        <li>Плетёная корзина или дизайнерская упаковка</li>
+        <li>Сюрприз-доставка к&nbsp;точному времени</li>
+      </ul>
+      <button class="btn btn--rose" data-order data-name="Большая корзина роз (101/301/501)" data-magnetic>Заказать большой букет</button>
+    </div>
+  </div>
+</section>
+
+<!-- POSTCARD -->
+<section class="postcard section section--light" id="postcard">
+  <div class="container postcard__grid">
+    <div class="postcard__text">
+      <p class="eyebrow" data-reveal><span class="dot"></span>Бесплатно к каждому заказу</p>
+      <h2 class="h2" data-split>Ваши слова&nbsp;— <em class="script">нашей рукой</em></h2>
+      <p class="lead" data-reveal>Каждый букет FLOS едет с&nbsp;открыткой, подписанной флористом от&nbsp;руки. Напишите текст прямо здесь и&nbsp;посмотрите, как его прочитают.</p>
+      <div class="chips" data-reveal>
+        <button class="chip" data-msg="Люблю тебя. Сегодня, завтра и всегда.">Люблю</button>
+        <button class="chip" data-msg="С днём рождения! Пусть этот год будет таким же ярким, как эти цветы.">С днём рождения</button>
+        <button class="chip" data-msg="Прости меня. Я был неправ, а ты — самая лучшая.">Прости</button>
+        <button class="chip" data-msg="Просто так. Потому что ты есть ♡">Просто так</button>
+        <button class="chip" data-msg="Мама, спасибо за всё. Ты — моё самое тёплое место на свете.">Маме</button>
+      </div>
+      <label class="field field--area" data-reveal>
+        <span>Текст открытки</span>
+        <textarea id="pcInput" maxlength="140" rows="3" placeholder="Напишите что-нибудь важное…"></textarea>
+        <small><b id="pcCount">0</b>/140</small>
+      </label>
+      <div class="postcard__actions" data-reveal>
+        <button class="btn btn--dark" id="pcOrder" data-magnetic>Добавить открытку к заказу</button>
+        <button class="btn btn--line" id="pcFlip">Перевернуть ↻</button>
+      </div>
+    </div>
+    <div class="postcard__stage">
+      <div class="pc" id="pc">
+        <div class="pc__face pc__front">
+          <img src="assets/images/dried-detail.jpg" alt="" loading="lazy">
+          <span class="pc__logo">FLOS</span>
+          <span class="pc__hint">нажмите, чтобы перевернуть</span>
+        </div>
+        <div class="pc__face pc__back">
+          <span class="pc__stamp">✿</span>
+          <p class="pc__msg" id="pcMsg">Напишите что-нибудь важное…</p>
+          <span class="pc__sign">с любовью, FLOS</span>
+          <div class="pc__lines"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HANDMADE DAY/NIGHT -->
+<section class="handmade section" id="handmade">
+  <div class="container handmade__grid">
+    <div class="compare" id="compare" data-reveal>
+      <img src="assets/images/house-night.jpg" alt="Домик с цветами светится в темноте" class="compare__img" loading="lazy">
+      <div class="compare__top"><img src="assets/images/house-day.jpg" alt="Домик с цветами из фоамирана днём" loading="lazy"></div>
+      <div class="compare__handle"><span>⟷</span></div>
+      <span class="compare__lbl compare__lbl--l">День</span><span class="compare__lbl compare__lbl--r">Ночь</span>
+      <input type="range" min="0" max="100" value="55" aria-label="Сравнить день и ночь" id="compareRange">
+    </div>
+    <div class="handmade__text">
+      <p class="eyebrow" data-reveal><span class="dot"></span>Ручная работа</p>
+      <h2 class="h2" data-split>Подарок, который <em class="script">светится</em></h2>
+      <p class="lead" data-reveal>Домик-ночник с&nbsp;цветами из&nbsp;фоамирана: днём&nbsp;— изящный декор, вечером&nbsp;— мягкий свет. Цветы не&nbsp;вянут, а&nbsp;воспоминание остаётся на&nbsp;годы. Потяните ползунок и&nbsp;посмотрите сами.</p>
+      <div class="handmade__row" data-reveal>
+        <figure data-cursor><img src="assets/images/foam-fence.jpg" alt="Композиция из фоамирана в деревянном заборчике" loading="lazy"></figure>
+        <div>
+          <span class="price">от 2 200 ₽</span>
+          <p>Идеально для детей, учителей и&nbsp;тех, у&nbsp;кого «всё есть».</p>
+          <button class="btn btn--rose btn--small" data-order data-name="Светящийся домик ручной работы">Заказать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DRIED -->
+<section class="dried section section--light" id="dried">
+  <div class="container dried__grid">
+    <div class="dried__text">
+      <p class="eyebrow" data-reveal><span class="dot"></span>Сухоцветы</p>
+      <h2 class="h2" data-split>Букет, который проживёт <em class="script">целый год</em></h2>
+      <p class="lead" data-reveal>Хлопок, лагурус, гортензия, лаванда, гелихризум&nbsp;— в&nbsp;нашей мастерской сотни видов сухоцветов. Соберём композицию под ваш интерьер, без воды и&nbsp;хлопот.</p>
+      <dl class="dried__facts" data-reveal>
+        <div><dt data-count="12">0</dt><dd>месяцев<br>радуют глаз</dd></div>
+        <div><dt data-count="100" data-suffix="+">0</dt><dd>видов<br>сухоцветов</dd></div>
+        <div><dt data-count="0">0</dt><dd>литров воды<br>для ухода</dd></div>
+      </dl>
+    </div>
+    <div class="dried__mosaic">
+      <figure class="d1" data-clip data-cursor><img src="assets/images/dried-cup.jpg" alt="Сухоцветы в стакане" loading="lazy"></figure>
+      <figure class="d2" data-clip data-cursor><img src="assets/images/dried-shop.jpg" alt="Мастерская сухоцветов" loading="lazy"></figure>
+      <figure class="d3" data-clip data-cursor><img src="assets/images/dried-detail.jpg" alt="Сухоцветы крупным планом" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="works section" id="works">
+  <div class="container">
+    <div class="sec-head sec-head--row">
+      <div>
+        <p class="eyebrow" data-reveal><span class="dot"></span>Примеры работ</p>
+        <h2 class="h2" data-split>Каждый букет&nbsp;— <em class="script">маленькая</em> история</h2>
+      </div>
+      <a href="https://t.me/Flos_Flowers" target="_blank" rel="noopener" class="link-arrow" data-reveal>Больше работ в Telegram →</a>
+    </div>
+    <div class="masonry" id="gallery">
+      <figure class="m-item" data-cursor data-full="assets/images/red-brick.jpg"><img src="assets/images/red-brick.jpg" alt="Красные розы в белой упаковке" loading="lazy"><figcaption>Алые розы</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/white-101.jpg"><img src="assets/images/white-101.jpg" alt="101 белая роза" loading="lazy"><figcaption>101 белая роза</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/peony-mix.jpg"><img src="assets/images/peony-mix.jpg" alt="Пионовый микс" loading="lazy"><figcaption>Пионовый сад</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/roses-basket-gray.jpg"><img src="assets/images/roses-basket-gray.jpg" alt="Корзина красных роз" loading="lazy"><figcaption>Корзина роз</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/pink-roses.jpg"><img src="assets/images/pink-roses.jpg" alt="Пудровые розы" loading="lazy"><figcaption>Пудровые розы</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/hydrangea.jpg"><img src="assets/images/hydrangea.jpg" alt="Гортензии" loading="lazy"><figcaption>Гортензии</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/white-basket.jpg"><img src="assets/images/white-basket.jpg" alt="Белые розы в корзине" loading="lazy"><figcaption>Белый сад</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/house-night.jpg"><img src="assets/images/house-night.jpg" alt="Светящийся домик" loading="lazy"><figcaption>Домик-ночник</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/white-25.jpg"><img src="assets/images/white-25.jpg" alt="25 белых роз" loading="lazy"><figcaption>Белое облако</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/red-kraft.jpg"><img src="assets/images/red-kraft.jpg" alt="Красные розы в крафте" loading="lazy"><figcaption>Алый шёлк</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/dried-cup-2.jpg"><img src="assets/images/dried-cup-2.jpg" alt="Сухоцветы" loading="lazy"><figcaption>Сухоцветы</figcaption></figure>
+      <figure class="m-item" data-cursor data-full="assets/images/red-black.jpg"><img src="assets/images/red-black.jpg" alt="Розы в чёрной упаковке" loading="lazy"><figcaption>Чёрный бархат</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why section section--light" id="why">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow" data-reveal><span class="dot"></span>Почему FLOS</p>
+      <h2 class="h2" data-split>С нами радовать близких <em class="script">легко</em></h2>
+    </div>
+    <div class="bento">
+      <div class="tile tile--rating" data-reveal>
+        <span class="tile__big"><b data-count="4.4" data-decimals="1">0</b><small>/5</small></span>
+        <p>Рейтинг на&nbsp;Яндекс Картах. Нас хвалят за&nbsp;свежие цветы, стильные композиции и&nbsp;приветливых флористов.</p>
+        <div class="stars" aria-hidden="true">★★★★<span>★</span></div>
+      </div>
+      <div class="tile tile--img" data-reveal><img src="assets/images/white-basket.jpg" alt="" loading="lazy"><p>Только свежие цветы&nbsp;— собираем букет в&nbsp;момент заказа</p></div>
+      <div class="tile" data-reveal><span class="tile__ico">✎</span><h3>Открытка от руки</h3><p>Подпишем вашими словами&nbsp;— бесплатно, к&nbsp;каждому заказу.</p></div>
+      <div class="tile" data-reveal><span class="tile__ico">◌</span><h3>Минимализм и тренды</h3><p>Следим за&nbsp;современной флористикой: никакой мишуры и&nbsp;лишней упаковки.</p></div>
+      <div class="tile tile--rose" data-reveal><span class="tile__ico">➜</span><h3>Доставка по Новосибирску</h3><p>Привезём к&nbsp;нужному времени или соберём к&nbsp;самовывозу.</p></div>
+      <div class="tile" data-reveal><span class="tile__ico">▭</span><h3>Оплата картой</h3><p>Удобно, быстро, без наличных.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS / DELIVERY -->
+<section class="steps section" id="delivery">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow" data-reveal><span class="dot"></span>Как заказать</p>
+      <h2 class="h2" data-split>Четыре шага до <em class="script">улыбки</em></h2>
+    </div>
+    <ol class="steps__list" id="steps">
+      <li data-reveal><span class="steps__n">01</span><h3>Выберите букет</h3><p>Из&nbsp;каталога или пришлите фото-референс&nbsp;— повторим или сделаем лучше.</p></li>
+      <li data-reveal><span class="steps__n">02</span><h3>Текст открытки</h3><p>Расскажите, что написать,&nbsp;— флорист подпишет открытку от&nbsp;руки.</p></li>
+      <li data-reveal><span class="steps__n">03</span><h3>Время и адрес</h3><p>Согласуем доставку или самовывоз, оплачиваете картой.</p></li>
+      <li data-reveal><span class="steps__n">04</span><h3>Вручение</h3><p>Привезём свежий букет точно ко&nbsp;времени. Остаётся только улыбаться.</p></li>
+    </ol>
+    <div class="steps__svg" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path id="stepsPath" d="M0 20 C 150 0, 250 40, 400 20 S 650 0, 800 20 S 1050 40, 1200 20"/></svg></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews section section--light" id="reviews">
+  <div class="container reviews__grid">
+    <div>
+      <p class="eyebrow" data-reveal><span class="dot"></span>Отзывы</p>
+      <h2 class="h2" data-split>За что нас <em class="script">выбирают</em></h2>
+      <p class="lead" data-reveal>Самое частое в&nbsp;отзывах наших клиентов на&nbsp;Яндекс Картах:</p>
+      <a href="https://yandex.ru/maps/org/112435131909/reviews/" target="_blank" rel="noopener" class="btn btn--dark" data-reveal data-magnetic>Читать отзывы на Яндекс Картах</a>
+    </div>
+    <ul class="cloud" id="cloud">
+      <li>Свежие цветы</li><li>Стильные композиции</li><li>Приветливый персонал</li><li>Быстрая доставка</li><li>Приятные цены</li><li>Удобное расположение</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section" id="faq">
+  <div class="container faq__grid">
+    <div>
+      <p class="eyebrow" data-reveal><span class="dot"></span>Вопросы</p>
+      <h2 class="h2" data-split>Отвечаем <em class="script">честно</em></h2>
+      <p class="lead" data-reveal>Не&nbsp;нашли ответа? Напишите нам в&nbsp;Telegram&nbsp;— флорист ответит лично.</p>
+    </div>
+    <div class="acc" id="acc">
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">Как быстро вы доставите букет?<i></i></button><div class="acc__a"><div><p>Время доставки согласуем при заказе. По&nbsp;возможности привезём в&nbsp;день обращения&nbsp;— просто напишите или позвоните.</p></div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">Можно заказать букет, которого нет на сайте?<i></i></button><div class="acc__a"><div><p>Конечно. Пришлите фото-пример, назовите бюджет или повод&nbsp;— флорист соберёт авторскую композицию.</p></div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">Открытка действительно бесплатная?<i></i></button><div class="acc__a"><div><p>Да. К&nbsp;каждому заказу прикладываем открытку ручной работы с&nbsp;вашим текстом, написанным от&nbsp;руки.</p></div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">Как оплатить заказ?<i></i></button><div class="acc__a"><div><p>Принимаем оплату банковской картой.</p></div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">Есть самовывоз?<i></i></button><div class="acc__a"><div><p>Да, забрать букет можно в&nbsp;салоне: Новосибирск, Красный проспект,&nbsp;75.</p></div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">Как продлить жизнь букету?<i></i></button><div class="acc__a"><div><p>Подрежьте стебли наискосок, меняйте воду каждый день и&nbsp;держите букет подальше от&nbsp;батарей и&nbsp;прямого солнца. Подробную памятку положим в&nbsp;заказ.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts section section--light" id="contacts">
+  <div class="container contacts__grid">
+    <div class="contacts__form-wrap">
+      <p class="eyebrow" data-reveal><span class="dot"></span>Заявка</p>
+      <h2 class="h2" data-split>Соберём букет под ваш <em class="script">повод</em></h2>
+      <p class="lead" data-reveal>Оставьте номер&nbsp;— флорист перезвонит, поможет с&nbsp;выбором и&nbsp;рассчитает стоимость.</p>
+      <form class="form" id="leadForm" novalidate data-reveal>
+        <label class="field"><span>Ваше имя</span><input type="text" name="name" autocomplete="name" placeholder="Анна" required></label>
+        <label class="field"><span>Телефон</span><input type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required data-phone></label>
+        <label class="field field--wide"><span>Повод или пожелания</span><input type="text" name="comment" placeholder="День рождения мамы, нежные оттенки, до 5 000 ₽"></label>
+        <label class="check field--wide"><input type="checkbox" required><span>Соглашаюсь с&nbsp;<button type="button" class="link" data-policy="terms">пользовательским соглашением</button> и&nbsp;<button type="button" class="link" data-policy="privacy">политикой обработки данных</button></span></label>
+        <button class="btn btn--rose field--wide" type="submit" data-magnetic>Получить подборку букетов</button>
+        <div class="form__ok" aria-live="polite"><span>✿</span><h3>Спасибо! Заявка принята</h3><p>Флорист свяжется с&nbsp;вами в&nbsp;ближайшее время.</p></div>
+      </form>
+    </div>
+    <div class="contacts__info">
+      <div class="contacts__map" data-reveal>
+        <iframe title="FLOS на карте" src="https://yandex.ru/map-widget/v1/?ll=82.915065%2C55.046939&z=16&pt=82.915065%2C55.046939%2Cpm2rdm&oid=112435131909" loading="lazy" allowfullscreen></iframe>
+      </div>
+      <ul class="clist" data-reveal>
+        <li><span>Адрес</span><a href="https://yandex.ru/maps/org/112435131909" target="_blank" rel="noopener">Новосибирск, Красный проспект, 75</a></li>
+        <li><span>Телефон</span><a href="tel:+79138943352">+7 913 894-33-52</a></li>
+        <li><span>Telegram-канал</span><a href="https://t.me/Flos_Flowers" target="_blank" rel="noopener">@Flos_Flowers</a></li>
+        <li><span>Написать флористу</span><a href="https://t.me/Alexandr_remkomfort" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/79138943352" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__big" aria-hidden="true">FLOS</div>
+  <div class="container footer__grid">
+    <div><a href="#top" class="logo"><span class="logo__mark">FLOS</span><span class="logo__sub">flowers · nsk</span></a><p class="footer__tag">С&nbsp;нами радовать близких легко!</p></div>
+    <nav class="footer__nav"><a href="#catalog">Каталог</a><a href="#postcard">Открытка</a><a href="#works">Работы</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+    <div class="footer__contacts"><a href="tel:+79138943352">+7 913 894-33-52</a><a href="https://t.me/Flos_Flowers" target="_blank" rel="noopener">Telegram-канал</a><a href="https://t.me/Alexandr_remkomfort" target="_blank" rel="noopener">Написать в Telegram</a><span>Красный проспект, 75</span></div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© <span id="year">2026</span> Салон цветов FLOS</span>
+    <div class="footer__legal"><button class="link" data-policy="terms">Пользовательское соглашение</button><button class="link" data-policy="privacy">Политика конфиденциальности и cookie</button></div>
+    <a href="https://studio-psi-olive.vercel.app/" target="_blank" rel="noopener" class="footer__studio">Сайт разработан в студии <b>Сайтика</b></a>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mbar">
+  <a href="tel:+79138943352" class="mbar__ico" aria-label="Позвонить"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+  <button class="btn btn--rose" data-order data-name="">Заказать букет</button>
+  <a href="https://t.me/Alexandr_remkomfort" target="_blank" rel="noopener" class="mbar__ico" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.5 4.3 2.9 11.5c-1.3.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.8-1.4-1.5zM9 14.2l9-5.7c.4-.3.8-.1.5.2l-7.4 6.7-.3 3.2z"/></svg></a>
+</div>
+
+<!-- ORDER MODAL -->
+<div class="modal" id="orderModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__box">
+    <button class="modal__close" data-close aria-label="Закрыть">✕</button>
+    <p class="eyebrow"><span class="dot"></span>Оформление заказа</p>
+    <h3 class="modal__title" id="orderTitle">Заказать <span id="orderName">букет</span></h3>
+    <form class="form form--modal" id="orderForm" novalidate>
+      <input type="hidden" name="bouquet" id="orderBouquet">
+      <label class="field"><span>Ваше имя</span><input type="text" name="name" placeholder="Анна" required autocomplete="name"></label>
+      <label class="field"><span>Телефон</span><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required data-phone autocomplete="tel"></label>
+      <label class="field field--wide"><span>Текст открытки (бесплатно)</span><input type="text" name="card" id="orderCard" placeholder="Например: «Люблю тебя»"></label>
+      <label class="check field--wide"><input type="checkbox" required><span>Соглашаюсь с&nbsp;<button type="button" class="link" data-policy="terms">соглашением</button> и&nbsp;<button type="button" class="link" data-policy="privacy">политикой данных</button></span></label>
+      <button class="btn btn--rose field--wide" type="submit">Отправить заявку</button>
+      <a class="modal__alt field--wide" href="https://t.me/Alexandr_remkomfort" target="_blank" rel="noopener">или написать сразу в Telegram →</a>
+      <div class="form__ok"><span>✿</span><h3>Заявка принята!</h3><p>Флорист свяжется с&nbsp;вами, уточнит детали и&nbsp;время доставки.</p></div>
+    </form>
+  </div>
+</div>
+
+<!-- POLICY MODAL -->
+<div class="modal modal--policy" id="policyModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="policyTitle">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__box">
+    <button class="modal__close" data-close aria-label="Закрыть">✕</button>
+    <div class="ptabs"><button class="ptab is-active" data-ptab="terms">Пользовательское соглашение</button><button class="ptab" data-ptab="privacy">Конфиденциальность и cookie</button></div>
+    <div class="policy" id="policy-terms">
+      <h3 id="policyTitle">Пользовательское соглашение</h3>
+      <p>Настоящее соглашение регулирует отношения между салоном цветов FLOS (далее&nbsp;— «Салон»), расположенным по&nbsp;адресу: г.&nbsp;Новосибирск, Красный проспект,&nbsp;75, и&nbsp;пользователем сайта (далее&nbsp;— «Пользователь»).</p>
+      <h4>1. Общие положения</h4>
+      <p>1.1. Используя сайт, Пользователь подтверждает, что ознакомился с&nbsp;условиями соглашения и&nbsp;принимает их. 1.2. Салон вправе изменять соглашение без предварительного уведомления; актуальная версия всегда размещена на&nbsp;сайте.</p>
+      <h4>2. Информация на сайте</h4>
+      <p>2.1. Сведения о&nbsp;товарах и&nbsp;ценах носят информационный характер и&nbsp;не&nbsp;являются публичной офертой. 2.2. Внешний вид букета может незначительно отличаться от&nbsp;фотографии в&nbsp;зависимости от&nbsp;сезона и&nbsp;наличия цветов; при замене состав согласуется с&nbsp;Пользователем. 2.3. Окончательная стоимость и&nbsp;сроки доставки подтверждаются менеджером.</p>
+      <h4>3. Оформление заказа</h4>
+      <p>3.1. Заявка, оставленная через формы сайта, Telegram, WhatsApp или по&nbsp;телефону, не&nbsp;является заказом до&nbsp;подтверждения Салоном. 3.2. Пользователь обязуется указывать достоверные контактные данные и&nbsp;данные получателя.</p>
+      <h4>4. Интеллектуальная собственность</h4>
+      <p>Все материалы сайта (тексты, фотографии, дизайн) защищены законодательством РФ. Копирование без согласия Салона запрещено.</p>
+      <h4>5. Ответственность</h4>
+      <p>Салон не&nbsp;несёт ответственности за&nbsp;временную недоступность сайта и&nbsp;за&nbsp;последствия указания Пользователем неверных данных.</p>
+      <h4>6. Контакты</h4>
+      <p>По&nbsp;вопросам соглашения: +7&nbsp;913&nbsp;894-33-52, Telegram&nbsp;@Flos_Flowers.</p>
+    </div>
+    <div class="policy" id="policy-privacy" hidden>
+      <h3>Политика конфиденциальности и использования cookie</h3>
+      <p>Политика разработана в&nbsp;соответствии с&nbsp;Федеральным законом №&nbsp;152-ФЗ «О&nbsp;персональных данных».</p>
+      <h4>1. Какие данные мы собираем</h4>
+      <p>Имя, номер телефона, адрес доставки, текст открытки и&nbsp;иные сведения, которые Пользователь добровольно указывает в&nbsp;формах сайта или мессенджерах.</p>
+      <h4>2. Цели обработки</h4>
+      <p>Связь с&nbsp;Пользователем, оформление и&nbsp;доставка заказа, улучшение качества обслуживания. Данные не&nbsp;передаются третьим лицам, кроме случаев, необходимых для доставки заказа или предусмотренных законом.</p>
+      <h4>3. Файлы cookie</h4>
+      <p>Сайт использует cookie и&nbsp;аналогичные технологии, чтобы запоминать настройки, обеспечивать корректную работу страниц и&nbsp;анализировать посещаемость в&nbsp;обезличенном виде. Пользователь может отключить cookie в&nbsp;настройках браузера; часть функций сайта при этом может работать некорректно.</p>
+      <h4>4. Хранение и защита</h4>
+      <p>Данные хранятся не&nbsp;дольше, чем это необходимо для целей обработки, и&nbsp;защищаются организационными и&nbsp;техническими мерами.</p>
+      <h4>5. Права Пользователя</h4>
+      <p>Пользователь вправе запросить сведения об&nbsp;обработке своих данных, потребовать их уточнения или удаления, отозвать согласие, написав нам: +7&nbsp;913&nbsp;894-33-52 или Telegram&nbsp;@Flos_Flowers.</p>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <button class="lightbox__close" data-lb="close" aria-label="Закрыть">✕</button>
+  <button class="lightbox__nav lightbox__prev" data-lb="prev" aria-label="Предыдущее">←</button>
+  <figure class="lightbox__fig"><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lightbox__nav lightbox__next" data-lb="next" aria-label="Следующее">→</button>
+</div>
+
+<!-- COOKIE -->
+<div class="cookie" id="cookie" role="region" aria-label="Уведомление о cookie">
+  <span class="cookie__ico" aria-hidden="true">🍪</span>
+  <p>Мы используем cookie, чтобы сайт работал удобнее. Продолжая, вы соглашаетесь с&nbsp;<button class="link" data-policy="privacy">политикой cookie</button>.</p>
+  <button class="btn btn--rose btn--small" id="cookieOk">Хорошо</button>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
