@@ -9,4 +9,4 @@
 
 Шрифты: Prata, Onest, Marck Script (Google Fonts).
 
-Сайт разработан в студии [Сайтика](https://студия-сайтика.рф/).
+Сайт разработан в студии [Сайтика](https://студия-сайтика.рф/?utm_source=client_sites&utm_medium=referral&utm_campaign=footer).
